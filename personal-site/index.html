@@ -8,16 +8,30 @@
     <link rel="stylesheet" href="(https://fonts.google.com/specimen/Raleway)" />
   </head>
   <body>
-    <header>
-      <img src="images/logo.svg" alt="fylo logo" />
+    <header class="storage-container">
+      <div class="fylo-logo">
+        <img src="images/logo.svg" alt="fylo logo" />
+      </div>
       <div class="icons">
-        <img src="images/icon-document.svg" alt="image of a document" />
-        <img src="images/icon-folder.svg" alt="image of a folder" />
-        <img src="images/icon-upload.svg" alt="image of an upload" />
+        <img
+          src="images/icon-document.svg"
+          alt="image of a document"
+          class="icon-item"
+        />
+        <img
+          src="images/icon-folder.svg"
+          alt="image of a folder"
+          class="icon-item"
+        />
+        <img
+          src="images/icon-upload.svg"
+          alt="image of an upload"
+          class="icon-item"
+        />
       </div>
     </header>
     <main>
-      <div>
+      <div class="storage-info">
         <p>You've used <span>815 GB</span> of your storage</p>
         <div class="storage">
           <p>0 GB</p>
@@ -25,7 +39,7 @@
         </div>
       </div>
       <div class="storage-left">
-        <p>185 <span>GB LEFT</span></p>
+        <p><span class="value">185 </span>GB LEFT</p>
       </div>
     </main>
   </body>

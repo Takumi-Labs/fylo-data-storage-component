@@ -6,7 +6,55 @@
   --color-grayish-blue: #848794;
   --color-Blue-850: #1d2c67;
   --color-Blue-950: #0c122c;
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
 
 /* GLOBAL STYLES 
 ----------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(../images/bg-mobile.png);
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.storage-container {
+  background-color: var(--color-Blue-850);
+}
+
+.fylo-logo {
+  width: 100%;
+  padding: 35px;
+}
+
+.icon-item {
+  background-color: var(--color-Blue-950);
+  padding: 5px;
+}
+
+.storage-info {
+  background-color: var(--color-Blue-850);
+  color: var(--color-grayish-blue);
+}
+
+.storage-left {
+  background-color: var(--color-white);
+  padding: 10px;
+  color: var(--color-grayish-blue);
+}
+
+.value {
+  color: var(--color-black);
+}
