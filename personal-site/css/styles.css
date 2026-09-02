@@ -32,6 +32,9 @@ body {
 
 .storage-container {
   background-color: var(--color-Blue-850);
+  width: 80%;
+  border-radius: 10px;
+  border-top-right-radius: 80px;
 }
 
 .fylo-logo {
@@ -57,4 +60,14 @@ body {
 
 .value {
   color: var(--color-black);
+}
+
+.storage-card {
+  width: 90%;
+  position: relative;
+  padding: 30px;
+}
+
+.storage-left {
+  width: 40%;
 }
