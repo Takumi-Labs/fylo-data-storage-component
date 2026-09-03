@@ -31,6 +31,13 @@ body {
   align-items: center;
   gap: 16px;
   padding: 24px;
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 120px 0;
+  /* max-width: 375px; */
 }
 
 .storage-container {
@@ -39,6 +46,7 @@ body {
   width: 100%;
   border-radius: 10px;
   border-top-right-radius: 80px;
+  padding-bottom: 50px;
 }
 
 .fylo-logo {
@@ -53,7 +61,10 @@ body {
 
 .icon-item {
   background-color: var(--color-Blue-950);
-  padding: 5px;
+  padding: 10px;
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
 }
 
 .storage-info {
@@ -67,6 +78,8 @@ body {
 
 .info {
   padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .progress-bar {
@@ -89,16 +102,18 @@ body {
   background-color: var(--color-white);
   margin-left: 500px;
   border-radius: 10px;
+  /* position: relative; */
 }
 
 .storage-left {
   background-color: var(--color-white);
   padding: 10px;
   color: var(--color-grayish-blue);
-  width: 40%;
+  width: 60%;
   border-radius: 15px;
   margin: 0 auto;
   margin-top: -40px;
+  text-align: center;
 }
 
 .value {
@@ -111,6 +126,7 @@ body {
   width: 100%;
   position: relative;
   padding-top: 0;
+  margin-top: 25px;
 }
 
 .storage {
@@ -121,4 +137,10 @@ body {
 
 .storage-info-value {
   color: var(--color-white);
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+  }
 }
