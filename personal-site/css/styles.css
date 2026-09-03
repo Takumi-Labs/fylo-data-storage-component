@@ -139,8 +139,37 @@ body {
   color: var(--color-white);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 600px) {
   body {
     background-image: url(../images/bg-desktop.png);
+    background-color: var(--color-Blue-950);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .info {
+    text-align: left;
+  }
+
+  .storage-left {
+    position: absolute;
+    top: -45px;
+    right: 30px;
+  }
+
+  .storage-left::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    /* margin-bottom: -10px; */
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
   }
 }
