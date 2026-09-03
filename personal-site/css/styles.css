@@ -2,6 +2,8 @@
 -------------------------- */
 
 :root {
+  --color-peach: #ffa399;
+  --color-pink: #ff4d97;
   --color-blue-200: #dddbff;
   --color-grayish-blue: #848794;
   --color-Blue-850: #1d2c67;
@@ -21,7 +23,8 @@
 body {
   margin: 0;
   background-image: url(../images/bg-mobile.png);
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +35,8 @@ body {
 
 .storage-container {
   background-color: var(--color-Blue-850);
-  width: 80%;
+  margin: 0 auto;
+  width: 100%;
   border-radius: 10px;
   border-top-right-radius: 80px;
 }
@@ -40,6 +44,7 @@ body {
 .fylo-logo {
   width: 100%;
   padding: 35px;
+  float: none;
 }
 
 .icons {
@@ -57,6 +62,7 @@ body {
   padding: 30px;
   padding-top: 15px;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .info {
@@ -70,10 +76,29 @@ body {
   border-radius: 10px;
 }
 
+.progress {
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: inherit;
+}
+
+.pointer {
+  width: 3%;
+  height: 100%;
+  background-color: var(--color-white);
+  margin-left: 500px;
+  border-radius: 10px;
+}
+
 .storage-left {
   background-color: var(--color-white);
   padding: 10px;
   color: var(--color-grayish-blue);
+  width: 40%;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: -40px;
 }
 
 .value {
@@ -83,9 +108,8 @@ body {
 }
 
 .storage-card {
-  width: 90%;
+  width: 100%;
   position: relative;
-  padding: 30px;
   padding-top: 0;
 }
 
@@ -93,10 +117,6 @@ body {
   color: var(--color-white);
   display: flex;
   justify-content: space-between;
-}
-
-.storage-left {
-  width: 40%;
 }
 
 .storage-info-value {
