@@ -22,7 +22,9 @@
 
 body {
   margin: 0;
+  background-color: var(--color-Blue-950);
   background-image: url(../images/bg-mobile.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -32,6 +34,7 @@ body {
   gap: 16px;
   padding: 24px;
   font-size: 14px;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -94,15 +97,16 @@ body {
   height: 100%;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   border-radius: inherit;
+  position: relative;
 }
 
 .pointer {
-  width: 3%;
+  width: 7%;
   height: 100%;
   background-color: var(--color-white);
-  margin-left: 500px;
-  border-radius: 10px;
-  /* position: relative; */
+  position: absolute;
+  right: 0;
+  border-radius: 100%;
 }
 
 .storage-left {
@@ -120,6 +124,7 @@ body {
   color: var(--color-black);
   font-weight: bold;
   font-size: 30px;
+  /* text-transform: uppercase; */
 }
 
 .storage-card {
@@ -142,7 +147,8 @@ body {
 @media (min-width: 600px) {
   body {
     background-image: url(../images/bg-desktop.png);
-    background-color: var(--color-Blue-950);
+    background-position: bottom;
+    background-size: contain;
   }
 
   .container {
@@ -151,6 +157,20 @@ body {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    width: 70%;
+  }
+
+  .storage-container {
+    width: 40%;
+    padding-bottom: 35px;
+  }
+
+  .storage-card {
+    width: 100%;
+  }
+
+  .storage-info {
+    padding-top: 0;
   }
 
   .info {
@@ -159,17 +179,22 @@ body {
 
   .storage-left {
     position: absolute;
-    top: -45px;
-    right: 30px;
+    top: -15px;
+    right: 20px;
+    border-bottom-right-radius: 0;
+    width: 30%;
   }
 
   .storage-left::after {
     content: "";
     position: absolute;
     right: 0;
-    bottom: -40px;
-    /* margin-bottom: -10px; */
+    bottom: -8px;
     border-top: 10px solid white;
     border-left: 10px solid transparent;
+  }
+
+  .pointer {
+    width: 3%;
   }
 }
