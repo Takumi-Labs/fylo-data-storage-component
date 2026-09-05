@@ -149,6 +149,7 @@ body {
     background-image: url(../images/bg-desktop.png);
     background-position: bottom;
     background-size: contain;
+    padding-top: 300px;
   }
 
   .container {
@@ -158,6 +159,8 @@ body {
     justify-content: center;
     gap: 30px;
     width: 70%;
+    padding-top: 0;
+    margin-bottom: 200px;
   }
 
   .storage-container {
